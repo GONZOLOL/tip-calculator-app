@@ -12,14 +12,35 @@ body {
   justify-content: center;
   background-color: hsl(185, 41%, 84%);
 }
+input[type=text]{
+  font-size: 24px;
+  text-align: right;
+  width: 100%;
+}
+input[type=number] {
+  text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+input[type=number] { appearance:textfield; }
 
+input[type=text], input[type=number] {
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 5px;
+}
 .block {
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
   padding: 20px;
-  margin: 20px;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
-
+.blue-block {
+  padding: 10%;
+}
 .inner-block {
   background-color: hsl(183, 100%, 15%);
   border-radius: 10px;
@@ -27,22 +48,31 @@ body {
 }
 
 h1 {
+  font-size: 20px;
   text-align: center;
+  font-weight: 700;
 }
 
+.headers {
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+.low-headers {
+  font-size: 10px;
+}
+
+.boton {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+}
+.reset {
+  margin-top: 30%;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-input {
-  text-align: right;
-}
-button {
-  background-color: hsl(183, 100%, 15%);
-  color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  width: 33%;
 }
