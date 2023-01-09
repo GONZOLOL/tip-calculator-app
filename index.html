@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+
     <link
       rel="icon"
       type="image/png"
@@ -13,30 +15,68 @@
     />
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
-  <body>
-    <div class="wrapper">
-      <div class="one">
-        <span class="headers">Bill</span> <br>
-        <input type="text" placeholder="0"> <br>
-        <span class="headers">Select Tip %</span> <br>
-        <div>5% 10% 15% 25% 50% Custom</div> <br>
-        <span class="headers">Number of People</span> <br>
-        <input type="text" placeholder="0">
+  <body>    
+    <div class="align-self-center">
+      <h1>SPLI</h1>
+      <h1>TTER</h1>
+      <div class="block">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <span class="headers">Bill</span> <br>
+              <input type="text" placeholder="0"> <br>
+              <span class="headers">Select Tip %</span> <br>
+              <div class="container text-center">
+                <div class="row">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                </div>
+                <div class="row">
+                    <button>25%</button>
+                    <button>50%</button>
+                    <input type="number" placeholder="Custom">
+                </div>
+              </div>
+              <span class="headers">Number of People</span> <br>
+              <input type="text" placeholder="0">
+            </div>
+            <div class="col inner-block">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <span class="headers">Tip Amount</span> <br>
+                    <span class="low-headers">/ person</span> <br> 
+                  </div>
+                  <div class="col">
+                    numero $
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <span class="headers">Total</span> <br>
+                    <span class="low-headers">/ person</span> <br>
+                  </div>
+                  <div class="col">
+                    numero $
+                  </div>
+                </div>
+                <div class="row">
+                  <button>Reset</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="two">
-        <span class="headers">Tip Amount</span>
-        <span class="low-headers">/ person</span>
-        <span class="headers">Total</span>
-        <span class="low-headers">/ person</span>
-        <button>Reset</button>
-      </div>
-    </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Gonzalo Lerda Díez</a>.
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Gonzalo Lerda Díez</a>.
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>
