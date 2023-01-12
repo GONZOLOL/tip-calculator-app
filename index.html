@@ -34,24 +34,24 @@
               <span class="headers">Select Tip %</span> <br>
               <div class="container text-center">
                 <div class="row row-cols-3 justify-content-between">
-                    <input type="radio" class="btn-check" id="btn-1" value="5" name="tip" autocomplete="off">
+                    <input type="radio" class="btn-check" id="btn-1" value="5" name="tip" autocomplete="off" onclick="btn_value(this.value)">
                     <label class="boton btn" for="btn-1">5%</label>
-                    <input type="radio" class="btn-check" id="btn-2" value="10" name="tip" autocomplete="off">
+                    <input type="radio" class="btn-check" id="btn-2" value="10" name="tip" autocomplete="off" onclick="btn_value(this.value)">
                     <label class="boton btn" for="btn-2">10%</label>
-                    <input type="radio" class="btn-check" id="btn-3" value="15" name="tip" autocomplete="off">
+                    <input type="radio" class="btn-check" id="btn-3" value="15" name="tip" autocomplete="off" onclick="btn_value(this.value)">
                     <label class="boton btn" for="btn-3">15%</label>
-                    <input type="radio" class="btn-check" id="btn-4" value="25" name="tip" autocomplete="off">
+                    <input type="radio" class="btn-check" id="btn-4" value="25" name="tip" autocomplete="off" onclick="btn_value(this.value)">
                     <label class="boton btn" for="btn-4">25%</label>
-                    <input type="radio" class="btn-check" id="btn-5" value="50" name="tip" autocomplete="off">
+                    <input type="radio" class="btn-check" id="btn-5" value="50" name="tip" autocomplete="off" onclick="btn_value(this.value)">
                     <label class="boton btn" for="btn-5">50%</label>
 
-                    <input class="custom" type="number" placeholder="Custom" id="custom">
+                    <input class="custom" type="number" placeholder="Custom" id="custom" oninput="getCustomValue(this.value)">
                 </div>
               </div>
               <span class="headers">Number of People</span> <br>
               <div class="input-group">
                 <span class="input-group-text dollar">$</span>
-                <input type="text" class="form-control" placeholder="0" id="people"> <br>
+                <input type="text" class="form-control" placeholder="0" id="people" oninput="run()"> <br>
               </div>
             </div>
             <div class="col inner-block">
