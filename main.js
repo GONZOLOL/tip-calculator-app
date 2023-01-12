@@ -1,9 +1,17 @@
-let bill = document.getElementById("bill").value;
-let people = document.getElementById("people").value;
-let tip = 0;
+let bill, people, tip, tip_amount, total;
+
+function getBillValue(val) {
+    bill = val;
+    console.log(bill);
+}
+
+function getPeopleValue(val) {
+    people = val;
+    console.log(people);
+}
 
 function btn_value(val){
-    tip  = val;
+    tip = val;
     console.log(tip);
 }
 
@@ -12,12 +20,14 @@ function getCustomValue(val) {
     console.log(tip);
 }
 
-let tip_amount = ((tip*bill)/100) / people
-let total = tip_amount + bill /2;
 
 function run() {
+    tip_amount = ((tip*bill)/100) / people
+    total = tip_amount + bill /2;
+
     document.getElementById("tip-amount").innerHTML ="$" + tip_amount.toFixed(2);
     document.getElementById("total").innerHTML ="$" + total.toFixed(2);
+
     console.log("esto funciona");
 }
 

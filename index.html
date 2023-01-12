@@ -26,7 +26,7 @@
               <span class="headers">Bill</span> <br>
               <div class="input-group">
                 <span class="input-group-text dollar">$</span>
-                <input for="validationServer05"type="text" id="bill" class="form-control" placeholder="0" for="validationServer04" required> <br>
+                <input for="validationServer05"type="text" id="bill" class="form-control" placeholder="0" for="validationServer04" required oninput="getBillValue(this.value)""> <br>
                 <div id="validationServer05Feedback" class="invalid-feedback">
                   Please provide a bill.
                 </div>            
@@ -51,7 +51,7 @@
               <span class="headers">Number of People</span> <br>
               <div class="input-group">
                 <span class="input-group-text dollar">$</span>
-                <input type="text" class="form-control" placeholder="0" id="people" oninput="run()"> <br>
+                <input type="text" class="form-control" placeholder="0" id="people" oninput="getPeopleValue(this.value), run()"> <br>
               </div>
             </div>
             <div class="col inner-block">
