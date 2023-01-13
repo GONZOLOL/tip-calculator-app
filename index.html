@@ -26,7 +26,7 @@
               <span class="headers">Bill</span> <br>
               <div class="input-group">
                 <span class="input-group-text dollar">$</span>
-                <input for="validationServer05"type="text" id="bill" class="form-control" placeholder="0" for="validationServer04" required oninput="getBillValue(this.value)""> <br>
+                <input for="validationServer05"type="number" id="bill" class="guess form-control" placeholder="0" for="validationServer04" required oninput="getBillValue(this.value)" min="1" pattern="^[0-9]+"> <br>
                 <div id="validationServer05Feedback" class="invalid-feedback">
                   Please provide a bill.
                 </div>            
@@ -45,13 +45,13 @@
                     <input type="radio" class="btn-check" id="btn-5" value="50" name="tip" autocomplete="off" onclick="btn_value(this.value)">
                     <label class="boton btn" for="btn-5">50%</label>
 
-                    <input class="custom" type="number" placeholder="Custom" id="custom" oninput="getCustomValue(this.value)">
+                    <input class="guess custom" type="number" placeholder="Custom" id="custom" oninput="getCustomValue(this.value)" min="1" max="100" pattern="^[0-9]+">
                 </div>
               </div>
               <span class="headers">Number of People</span> <br>
               <div class="input-group">
                 <span class="input-group-text dollar">$</span>
-                <input type="text" class="form-control" placeholder="0" id="people" oninput="getPeopleValue(this.value), run()"> <br>
+                <input type="number" class="guess form-control" placeholder="0" id="people" oninput="getPeopleValue(this.value), run()" min="1" pattern="^[0-9]+"> <br>
               </div>
             </div>
             <div class="col inner-block">

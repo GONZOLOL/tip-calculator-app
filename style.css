@@ -18,17 +18,16 @@ input[type=text]{
   width: 100%;
 }
 input[type=number] {
-  text-align: center;
+  text-align: right;
+  appearance: textfield;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
 }
-input[type=number] { appearance:textfield; }
 
 input[type=text], input[type=number] {
   background-color: hsl(189, 41%, 97%);
-  border: none;
   border-radius: 5px;
   font-size: 24px;
 }
